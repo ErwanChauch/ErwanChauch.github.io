@@ -1,0 +1,72 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Garet;
+  posi
+}
+/* NAV + LOGO */
+.navigation{
+  display: flex;
+  flex-direction: col;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items:center;
+  height:15vh
+}
+.logo{
+  position:absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 15vh;
+}
+
+.icon{
+  height: 50px;
+}
+  
+}
+/* ------- */
+
+
+
+h1{
+  text-align: center;
+  font-size: 250%;
+}
+grille-container{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+div[class^="row"]{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  width: 50vmin;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+.box1 { grid-area: 1 / 1 / 2 / 2; }
+.box2 { grid-area: 1 / 2 / 2 / 3; }
+.box3 { grid-area: 1 / 3 / 2 / 4; }
+.box4 { grid-area: 1 / 4 / 2 / 5; }
+.box5 { grid-area: 1 / 5 / 2 / 6; }
+      
+div[class^="box"]{ 
+  border: solid black 2px;
+  aspect-ratio: 1;
+  font-size: 300%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+@font-face {
+  font-family: Garet ;
+  src: url(DB\ Sans\ Regular.otf);
+}
